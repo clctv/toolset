@@ -219,7 +219,7 @@ async function detectPackageManager() {
 
 async function main() {
   console.log('')
-  intro(colors.cyan(colors.bold("Let's setup your project!")))
+  intro(colors.cyan(colors.bold("Let's set up your project!")))
 
   const packageManager = await detectPackageManager()
 

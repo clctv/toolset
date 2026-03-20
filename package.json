@@ -2,6 +2,16 @@
   "name": "@clctv/toolset",
   "version": "0.1.0",
   "description": "Opinionated CLI to bootstrap JS/TS project tooling fast.",
+  "keywords": [
+    "bootstrap",
+    "cli",
+    "javascript",
+    "project-setup",
+    "scaffold",
+    "tooling",
+    "typescript"
+  ],
+  "repository": "clctv/toolset",
   "bin": {
     "toolset": "./dist/index.js"
   },
