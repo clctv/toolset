@@ -169,14 +169,8 @@ async function setupRelease(agent: PackageManagerAgent) {
   packageJson.publishConfig = {
     access: 'public',
   }
-  const buildCommand = resolveCommand(agent, 'run', ['build'])
-  const beforeInitHook = buildCommand
-    ? `${buildCommand.command} ${buildCommand.args.join(' ')}`
-    : `${agent} run build`
-  packageJson['release-it'] = {
-    hooks: {
-      'before:init': [beforeInitHook],
-    },
+  const hasBuildScript = typeof scripts.build === 'string' && scripts.build.length > 0
+  const releaseConfig: Record<string, unknown> = {
     git: {
       commitMessage: 'chore: release v${version}',
     },
@@ -193,6 +187,16 @@ async function setupRelease(agent: PackageManagerAgent) {
       },
     },
   }
+  if (hasBuildScript) {
+    const buildCommand = resolveCommand(agent, 'run', ['build'])
+    const beforeInitHook = buildCommand
+      ? `${buildCommand.command} ${buildCommand.args.join(' ')}`
+      : `${agent} run build`
+    releaseConfig.hooks = {
+      'before:init': [beforeInitHook],
+    }
+  }
+  packageJson['release-it'] = releaseConfig
   writeFileSync(packageJsonPath, `${JSON.stringify(packageJson, null, 2)}\n`, 'utf8')
 
   const npmrcPath = join(process.cwd(), '.npmrc')
