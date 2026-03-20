@@ -1,6 +1,9 @@
 {
   "name": "@clctv/toolset",
   "version": "0.0.0",
+  "bin": {
+    "toolset": "./dist/index.js"
+  },
   "files": [
     "dist"
   ],
@@ -15,8 +18,12 @@
   "scripts": {
     "build": "rslib build",
     "dev": "rslib build --watch",
-    "release": "pnpm run build && release-it --only-version",
+    "release": "release-it --only-version",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.1.0",
+    "package-manager-detector": "^1.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
@@ -40,5 +47,27 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "release-it": {
+    "hooks": {
+      "before:init": [
+        "pnpm run build"
+      ]
+    },
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true,
+      "releaseName": "v${version}",
+      "web": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md",
+        "ignoreRecommendedBump": true
+      }
+    }
   }
 }
