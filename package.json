@@ -1,6 +1,6 @@
 {
   "name": "@clctv/toolset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Opinionated CLI to bootstrap JS/TS project tooling fast.",
   "bin": {
     "toolset": "./dist/index.js"
