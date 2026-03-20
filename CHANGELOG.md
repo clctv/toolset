@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/clctv/toolset/compare/0.1.0...0.1.1) (2026-03-20)
+
+### Bug Fixes
+
+- should not add release hook when build script not exist ([801b6f4](https://github.com/clctv/toolset/commit/801b6f44b9ce78f0b59378184d4b354998b39408))
+- wording in the intro message ([8f396e3](https://github.com/clctv/toolset/commit/8f396e3753cda275ecdb8e5c6d4204791afe2974))
+
 # 0.1.0 (2026-03-20)
 
 ### Features
