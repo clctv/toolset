@@ -11,6 +11,7 @@
     "tooling",
     "typescript"
   ],
+  "license": "MIT",
   "repository": "clctv/toolset",
   "bin": {
     "toolset": "./dist/index.js"
