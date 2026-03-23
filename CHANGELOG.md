@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.2](https://github.com/clctv/toolset/compare/0.1.1...0.1.2) (2026-03-23)
+
+### Bug Fixes
+
+- name in readme ([f216e2c](https://github.com/clctv/toolset/commit/f216e2c92db3239de6b48e353a5ff486c62641fb))
+
 ## [0.1.1](https://github.com/clctv/toolset/compare/0.1.0...0.1.1) (2026-03-20)
 
 ### Bug Fixes
