@@ -1,4 +1,4 @@
-# @clctv/toolset
+# Toolset
 
 Opinionated CLI to bootstrap JS/TS project tooling fast.
 
