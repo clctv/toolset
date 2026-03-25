@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3](https://github.com/clctv/toolset/compare/0.1.2...0.1.3) (2026-03-25)
+
+### Bug Fixes
+
+- add license to package.json ([ef6168c](https://github.com/clctv/toolset/commit/ef6168c18be79678febfcea0b78ff5339755323f))
+
 ## [0.1.2](https://github.com/clctv/toolset/compare/0.1.1...0.1.2) (2026-03-23)
 
 ### Bug Fixes
