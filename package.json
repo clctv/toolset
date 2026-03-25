@@ -1,7 +1,7 @@
 {
   "name": "@clctv/toolset",
   "version": "0.1.2",
-  "description": "Opinionated CLI to bootstrap JS/TS project tooling fast.",
+  "description": "Opinionated CLI to bootstrap JS/TS project tooling fast",
   "keywords": [
     "bootstrap",
     "cli",
@@ -9,6 +9,7 @@
     "project-setup",
     "scaffold",
     "tooling",
+    "toolset",
     "typescript"
   ],
   "license": "MIT",

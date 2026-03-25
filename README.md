@@ -1,6 +1,6 @@
 # Toolset
 
-Opinionated CLI to bootstrap JS/TS project tooling fast.
+Opinionated CLI to bootstrap JS/TS project tooling fast
 
 It helps you install and initialize:
 
@@ -11,7 +11,7 @@ It helps you install and initialize:
 > [!IMPORTANT]
 > This is an opinionated tool: it applies predefined defaults and file changes designed for a specific workflow.
 
-## Why this tool
+## Why
 
 When starting a new project, wiring up quality and release tooling usually means repeating the same setup steps.  
 `@clctv/toolset` turns that into a guided CLI that:
