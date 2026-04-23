@@ -38,22 +38,22 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@clack/prompts": "^1.1.0",
+    "@clack/prompts": "^1.2.0",
     "package-manager-detector": "^1.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@release-it/conventional-changelog": "^10.0.6",
-    "@rslib/core": "^0.20.0",
-    "@types/node": "^25.5.0",
+    "@rslib/core": "^0.21.3",
+    "@types/node": "^25.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
+    "oxfmt": "^0.46.0",
+    "oxlint": "^1.61.0",
     "picocolors": "^1.1.1",
-    "release-it": "^19.2.4",
-    "typescript": "^5.9.3"
+    "release-it": "^20.0.0",
+    "typescript": "5.9.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs,cjs}": "oxlint --fix",
